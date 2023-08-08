@@ -1,4 +1,13 @@
 :root {
+  --clr-sedans-background: ;
+  --clr-suvs-background: ;
+  --clr-luxury-background: ;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
 }
 
 .container {
