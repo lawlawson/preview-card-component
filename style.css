@@ -1,3 +1,27 @@
-body {
-  background-color: bisque;
+:root {
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+  display: flex;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
