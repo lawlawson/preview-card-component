@@ -1,13 +1,26 @@
 :root {
-  --clr-sedans-background: hsl(31, 77%, 52%);
-  --clr-suvs-background: hsl(184, 100%, 22%);
-  --clr-luxury-background: hsl(179, 100%, 13%);
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --clr-text: hsla(0, 0%, 100%, 0.75);
+  --clr-background: hsl(0, 0%, 95%);
+
+  --ff: 'Chivo', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs: 15px;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   place-content: center;
+  font-family: var(--ff);
+  font-size: var(--fs);
+  color: var(--clr-text);
+  background-color: var(--clr-background);
 }
 
 .container {
@@ -18,16 +31,16 @@ body {
 }
 
 .sedans {
-  background-color: var(--clr-sedans-background);
+  background-color: var(--clr-bright-orange);
   border-radius: 10px 10px 0 0;
 }
 
 .suvs {
-  background-color: var(--clr-suvs-background);
+  background-color: var(--clr-dark-cyan);
 }
 
 .luxury {
-  background-color: var(--clr-luxury-background);
+  background-color: var(--clr-very-dark-cyan);
   border-radius: 0 0 10px 10px;
 }
 
@@ -35,5 +48,13 @@ body {
   .container {
     display: flex;
     flex-direction: row;
+  }
+
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .luxury {
+    border-radius: 0 10px 10px 0;
   }
 }
