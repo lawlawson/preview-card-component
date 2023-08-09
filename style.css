@@ -40,9 +40,9 @@ img {
 .sedans {
   background-color: var(--clr-bright-orange);
   border-radius: 8px 8px 0 0;
-  padding: 50px;
+  padding: 48px;
   width: 327px;
-  height: 442px;
+  height: 360px;
 }
 
 .sedans button {
@@ -51,9 +51,9 @@ img {
 
 .suvs {
   background-color: var(--clr-dark-cyan);
-  padding: 50px;
+  padding: 48px;
   width: 327px;
-  height: 442px;
+  height: 360px;
 }
 
 .suvs button {
@@ -63,9 +63,9 @@ img {
 .luxury {
   background-color: var(--clr-very-dark-cyan);
   border-radius: 0 0 8px 8px;
-  padding: 50px;
+  padding: 48px;
   width: 327px;
-  height: 442px;
+  height: 360px;
 }
 
 .luxury button {
@@ -78,16 +78,17 @@ img {
   text-transform: uppercase;
 }
 
-.paragraph {
-  height: 50px;
-  width: 50px;
+p {
+  height: 125px;
+  width: 231px;
+  line-height: 25px;
 }
 
 button {
   background-color: var(--clr-background);
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 25px;
+  padding: 12px 31px;
   border: none;
   width: 146px;
   height: 48px;
