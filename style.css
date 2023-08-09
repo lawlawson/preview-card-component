@@ -7,6 +7,7 @@
   --clr-background: hsl(0, 0%, 95%);
 
   --ff: 'Chivo', sans-serif;
+  --ff-bold: 'Big Shoulders Display', cursive;
 
   --fw-regular: 400;
   --fw-bold: 700;
@@ -33,18 +34,51 @@ body {
 .sedans {
   background-color: var(--clr-bright-orange);
   border-radius: 10px 10px 0 0;
+  padding: 50px;
+}
+
+.sedans button {
+  color: var(--clr-bright-orange);
 }
 
 .suvs {
   background-color: var(--clr-dark-cyan);
+  padding: 50px;
+}
+
+.suvs button {
+  color: var(--clr-dark-cyan);
 }
 
 .luxury {
   background-color: var(--clr-very-dark-cyan);
   border-radius: 0 0 10px 10px;
+  padding: 50px;
 }
 
-@media (min-width: 375px) {
+.luxury button {
+  color: var(--clr-very-dark-cyan);
+}
+
+.heading {
+  font-family: var(--ff-bold);
+  text-transform: uppercase;
+}
+
+.paragraph {
+  height: 50px;
+  width: 50px;
+}
+
+button {
+  background-color: var(--clr-background);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+@media (min-width: 376px) {
   .container {
     display: flex;
     flex-direction: row;
@@ -56,5 +90,9 @@ body {
 
   .luxury {
     border-radius: 0 10px 10px 0;
+  }
+
+  button {
+    margin-top: 40px;
   }
 }
