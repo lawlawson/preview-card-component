@@ -1,7 +1,7 @@
 :root {
-  --clr-sedans-background: ;
-  --clr-suvs-background: ;
-  --clr-luxury-background: ;
+  --clr-sedans-background: hsl(31, 77%, 52%);
+  --clr-suvs-background: hsl(184, 100%, 22%);
+  --clr-luxury-background: hsl(179, 100%, 13%);
 }
 
 body {
@@ -14,23 +14,26 @@ body {
   margin: auto;
   max-width: 1440px;
   display: flex;
+  flex-direction: column;
 }
 
 .sedans {
-  background-color: hsl(31, 77%, 52%);
+  background-color: var(--clr-sedans-background);
+  border-radius: 10px 10px 0 0;
 }
 
 .suvs {
-  background-color: hsl(184, 100%, 22%);
+  background-color: var(--clr-suvs-background);
 }
 
 .luxury {
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--clr-luxury-background);
+  border-radius: 0 0 10px 10px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
