@@ -90,8 +90,16 @@ button {
   margin-top: 25px;
   padding: 12px 31px;
   border: none;
+  cursor: pointer;
   width: 146px;
   height: 48px;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: var(--fw-regular);
 }
 
 @media (min-width: 376px) {
